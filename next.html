@@ -64,7 +64,7 @@
         /* var getUrl = document.referrer;
                                                 var address = getUrl.split('/')[2].split(':')[0];
                                                 var isPreloaderRequired = address != window.location.hostname*/
-        if (true) {
+        if (!document.referrer) {
 
             let anim = anime.timeline();
             anim.add({
@@ -125,7 +125,7 @@
         </div>
         <div class="navbar-center">
             <span class="navbar-element"><a href="#">Проекты</a></span>
-            <span class="navbar-element"><a href="next.html">Я пиздатый</a></span>
+            <span class="navbar-element"><a href="#">Я пиздатый</a></span>
             <span class="navbar-element"></span>
             <span class="navbar-element"></span>
         </div>
@@ -139,7 +139,7 @@
 
     </nav>
     <div class="landing">
-
+        Это уже другая страница.
 
 
     </div>
