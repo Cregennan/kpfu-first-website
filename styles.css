@@ -59,7 +59,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./img/gori-2560x1440-nebo-4k-5k-zakat-android-oboi-11473\ \(1\).jpg');
+    
     background-repeat: no-repeat;
     background-size: auto 100%;
     filter: blur(1);
@@ -105,70 +105,11 @@ body {
     transition: 0.5s
 }
 
-
-/*NAVBAR*/
-
-nav.navbar-nav {
-    font-family: "SF UI Display Light";
-    font-weight: 300;
-    height: 50px;
+section .block{
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar-brand {
-    font-family: "SF UI Display Regular";
-}
-
-.navbar-start {
-    margin-left: 20px;
-}
-
-.navbar-center {
-    height: 100%;
-    display: flex;
-}
-
-.navbar-end {
-    margin-right: 30px;
-}
-
-.navbar-element {
-    margin-right: 20px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.navbar-element a {
-    text-decoration: none;
-    color: black;
-}
-
-.navbar-element a:hover {
-    color: #444444;
-}
-
-.navbar-element:last-child {
-    margin-right: 0;
-}
-
-.navbar-link {
-    color: blue;
-    font-size: 1.05rem!important;
-}
-
-.navbar-link:hover {
-    color: darkblue;
-}
-
-.navbar-end {
-    display: flex;
-}
-
-.navbar-link:not(:last-child) {
-    margin-right: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px 30px 30px 30px;
+    margin-top: 30px;
 }

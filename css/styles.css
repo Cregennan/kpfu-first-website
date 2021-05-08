@@ -1,0 +1,151 @@
+/*SCROLL*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+.no-overflow {
+  overflow-y: hidden;
+}
+
+/*PRELOADER*/
+#preloader {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  font-family: "SF UI Display Medium";
+  font-size: 4rem;
+}
+
+#prel-logo {
+  height: 50px;
+}
+
+.st0 {
+  /* stroke-dashoffset: 100!important*/
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.landing {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  filter: blur(1);
+}
+
+.centered {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "SF UI Display Regular";
+}
+
+.main-header {
+  --webkit-backdrop-filter: blur(100);
+  font-weight: 500;
+}
+
+.subscript {
+  font-weight: 200;
+  font-family: "SF UI Display Light";
+  font-size: 1.2rem0;
+}
+
+.another {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.another a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.another a:hover {
+  color: purple;
+  transition: 0.5s;
+}
+
+.block {
+  font-family: "Roboto";
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1246px) {
+  .block {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: space-around;
+  }
+}
+@media screen and (min-width: 1715px) {
+  .block {
+    justify-content: space-around;
+  }
+}
+.block .right-component {
+  width: 700px;
+}
+@media screen and (max-width: 768px) {
+  .block .right-component {
+    width: 90%;
+  }
+}
+.block .left-component {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px 30px 30px;
+  margin-left: 10%;
+}
+@media screen and (max-width: 768px) {
+  .block .left-component {
+    margin-left: 0;
+  }
+}
+.block .left-component h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}/*# sourceMappingURL=styles.css.map */
