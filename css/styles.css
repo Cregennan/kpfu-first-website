@@ -112,7 +112,7 @@ section {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 1246px) {
+@media screen and (max-width: 1406px) {
   .block {
     flex-direction: row-reverse;
     justify-content: center;
@@ -128,7 +128,12 @@ section {
   }
 }
 .block .right-component {
-  width: 700px;
+  width: 600px;
+}
+@media screen and (max-width: 1406px) {
+  .block .right-component {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 768px) {
   .block .right-component {
@@ -150,11 +155,17 @@ section {
   }
 }
 .block .left-component h1 {
+  font-family: "Roboto";
   margin-bottom: 20px;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 .block .left-component p {
-  font-size: 1.1rem;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+}
+.block .left-component span {
+  font-family: "Open Sans";
+  font-size: 1.3rem;
 }
 .block .left-component .social-icons {
   margin-top: 20px;
@@ -206,4 +217,21 @@ section {
 .introduce.dark {
   background: #333;
   color: #eee;
+}
+
+.main-footer {
+  padding: 40px 40px 40px 40px;
+  background: #fefefe;
+  color: #101010;
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-end;
+}
+.main-footer.dark {
+  background: #333;
+  color: #eee;
+}
+.main-footer .footer-element {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=styles.css.map */

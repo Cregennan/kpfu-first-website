@@ -52,6 +52,7 @@ html
 
 
 body 
+    
     margin: 0
     background: darken(#fff, 3.5%)
 /*NAVBAR*/
@@ -83,7 +84,7 @@ section
     margin-top: 80px
 .block
     $screen-shrink-one: 768px
-    $screen-shrink-two: 1246px
+    $screen-shrink-two: 1406px
     $screen-shrink-three: 1715px
     font-family: 'Roboto'
     width: 100%
@@ -104,9 +105,12 @@ section
         .left-component
             margin-right: 5%
     .right-component 
-        width: 700px
+        width: 600px
+        @media screen and (max-width: $screen-shrink-two)
+            width: 500px
         @media screen and (max-width: $screen-shrink-one)
             width: 90%         
+        
     
             
     .left-component
@@ -121,10 +125,15 @@ section
             margin-left: 0
 
         h1
+            font-family: 'Roboto'
             margin-bottom: 20px
-            font-size: 2.5rem
+            font-size: 3.5rem
         p
-            font-size: 1.1rem 
+            font-family: 'Open Sans'
+            font-size: 1.5rem 
+        span
+            font-family: 'Open Sans'
+            font-size: 1.3rem
         .social-icons
             margin-top: 20px
             a
@@ -151,3 +160,16 @@ section
                     
             
 
+.main-footer
+    padding: 40px 40px 40px 40px
+    background: $light-back
+    color: $light-text
+    &.dark
+        background: $dark-back
+        color: $dark-text
+    display: flex
+    justify-content: flex-start
+    align-self: flex-end
+    .footer-element
+        display: flex
+        flex-direction: column
