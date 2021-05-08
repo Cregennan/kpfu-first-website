@@ -48,57 +48,58 @@ html {
 
 body {
   margin: 0;
+  background: #f6f6f6;
 }
 
-.landing {
-  width: 100%;
-  height: 100%;
+/*NAVBAR*/
+.custom-navbar {
+  background: white !important;
+  height: 70px;
+}
+
+.navbar-social {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  filter: blur(1);
+  flex-direction: row;
+  margin-right: 50px;
+}
+.navbar-social a {
+  margin-left: 0.7rem;
+  font-size: 1.3rem;
+}
+.navbar-social a i, .navbar-social a i:hover {
+  transition: 0.1s;
+}
+.navbar-social a i.fa-vk {
+  color: #1a4b78;
+}
+.navbar-social a i.fa-vk:hover {
+  color: #4376a6;
+}
+.navbar-social a i.fa-instagram-square {
+  background: linear-gradient(180deg, #515bd4 0%, #dd2a7b 35%, #feda77 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #515bd4;
+}
+.navbar-social a i.fa-instagram-square:hover {
+  background: linear-gradient(180deg, #303bc2 0%, #b71d63 35%, #fecc44 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #303bc2;
+}
+.navbar-social a i.fa-github {
+  color: #800080;
+}
+.navbar-social a:hover {
+  color: #1a001a;
 }
 
-.centered {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  font-size: 1.5rem;
-  font-family: "SF UI Display Regular";
+#navbarSupportedContent {
+  background: #fefefe;
 }
 
-.main-header {
-  --webkit-backdrop-filter: blur(100);
-  font-weight: 500;
-}
-
-.subscript {
-  font-weight: 200;
-  font-family: "SF UI Display Light";
-  font-size: 1.2rem0;
-}
-
-.another {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 30px;
-}
-
-.another a {
-  text-decoration: none;
-  color: white;
-  transition: 0.5s;
-}
-
-.another a:hover {
-  color: purple;
-  transition: 0.5s;
+section {
+  margin-top: 80px;
 }
 
 .block {
@@ -120,7 +121,10 @@ body {
 }
 @media screen and (min-width: 1715px) {
   .block {
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .block .left-component {
+    margin-right: 5%;
   }
 }
 .block .right-component {
@@ -148,4 +152,58 @@ body {
 .block .left-component h1 {
   margin-bottom: 20px;
   font-size: 2.5rem;
+}
+.block .left-component p {
+  font-size: 1.1rem;
+}
+.block .left-component .social-icons {
+  margin-top: 20px;
+}
+.block .left-component .social-icons a {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+.block .left-component .social-icons a i, .block .left-component .social-icons a i:hover {
+  transition: 0.1s;
+}
+.block .left-component .social-icons a i.fa-vk {
+  color: #1a4b78;
+}
+.block .left-component .social-icons a i.fa-vk:hover {
+  color: #4376a6;
+}
+.block .left-component .social-icons a i.fa-instagram-square {
+  background: linear-gradient(180deg, #515bd4 0%, #dd2a7b 35%, #feda77 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #515bd4;
+}
+.block .left-component .social-icons a i.fa-instagram-square:hover {
+  background: linear-gradient(180deg, #303bc2 0%, #b71d63 35%, #fecc44 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #303bc2;
+}
+.block .left-component .social-icons a i.fa-github {
+  color: #800080;
+}
+.block .left-component .social-icons a:hover {
+  color: #1a001a;
+}
+
+.introduce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #fefefe;
+  color: #101010;
+}
+.introduce.dark {
+  background: #333;
+  color: #eee;
 }/*# sourceMappingURL=styles.css.map */

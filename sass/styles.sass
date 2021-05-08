@@ -1,5 +1,5 @@
 /*SCROLL*/
-
+@import '_mixins.sass'
 ::-webkit-scrollbar 
     width: 5px
 
@@ -15,7 +15,10 @@
 .no-overflow 
     overflow-y: hidden
 
-
+$light-back: #fefefe
+$dark-back: #333
+$light-text: #101010
+$dark-text: #eee
 
 /*PRELOADER*/
 #preloader 
@@ -50,60 +53,34 @@ html
 
 body 
     margin: 0
+    background: darken(#fff, 3.5%)
+/*NAVBAR*/
+.custom-navbar 
+    background: white!important
+    height: 70px
 
 
-.landing 
-    width: 100%
-    height: 100%
+
+.navbar-social
     display: flex
-    justify-content: center
-    align-items: center
-    
-    background-repeat: no-repeat
-    background-size: auto 100%
-    filter: blur(1)
+    flex-direction: row
+    margin-right: 50px
+    a
+        margin-left: .7rem
+        font-size: 1.3rem
+        i, i:hover
+            transition: .1s
+        @include vk-color
+        @include instagram-color
+        @include github-color
+
+#navbarSupportedContent
+    background: $light-back
 
 
-.centered 
-    display: flex
-    justify-content: space-around
-    flex-direction: column
-    align-items: center
-    color: white
-    font-size: 1.5rem
-    font-family: 'SF UI Display Regular'
 
-
-.main-header 
-    --webkit-backdrop-filter: blur(100)
-    font-weight: 500
-
-
-.subscript 
-    font-weight: 200
-    font-family: 'SF UI Display Light'
-    font-size: 1.2rem0
-
-
-.another 
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
-    margin-top: 30px
-
-
-.another a 
-    text-decoration: none
-    color: white
-    transition: 0.5s
-
-
-.another a:hover 
-    color: purple
-    transition: 0.5s
-
-
+section 
+    margin-top: 80px
 .block
     $screen-shrink-one: 768px
     $screen-shrink-two: 1246px
@@ -123,7 +100,9 @@ body
         justify-content: center
         align-items: space-around
     @media screen and (min-width: $screen-shrink-three)
-        justify-content: space-around
+        justify-content: center
+        .left-component
+            margin-right: 5%
     .right-component 
         width: 700px
         @media screen and (max-width: $screen-shrink-one)
@@ -144,5 +123,31 @@ body
         h1
             margin-bottom: 20px
             font-size: 2.5rem
+        p
+            font-size: 1.1rem 
+        .social-icons
+            margin-top: 20px
+            a
+                margin-left: .5rem
+                font-size: 1.5rem
+                i, i:hover
+                    transition: .1s 
+                @include vk-color
+                @include instagram-color
+                @include github-color
+
+.introduce
+    @include centered-flex
+    font-family: 'Roboto'
+    font-size: 3rem
+    font-weight: 600
+    padding-top: 30px
+    padding-bottom: 30px
+    background: $light-back
+    color: $light-text
+    &.dark
+        background: $dark-back
+        color: $dark-text
+                    
             
 

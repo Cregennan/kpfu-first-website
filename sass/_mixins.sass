@@ -1,0 +1,25 @@
+@mixin centered-flex
+    display: flex
+    justify-content: center
+    align-items: center
+@mixin instagram-color
+    i.fa-instagram-square
+        background: linear-gradient(180deg, rgba(81,91,212,1) 0%, rgba(221,42,123,1) 35%, rgba(254,218,119,1) 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        color: rgb(81,91,212)
+        &:hover
+            background: linear-gradient(180deg, darken(rgba(81,91,212,1),10%) 0%, darken(rgba(221,42,123,1),10%) 35%, darken(rgba(254,218,119,1),10%) 100%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            color: darken(rgb(81,91,212),10%)
+@mixin vk-color
+    i.fa-vk
+        color: #1a4b78
+        &:hover
+            color: #4376a6
+@mixin github-color
+    i.fa-github
+        color: #800080
+    &:hover
+        color: darken(#800080, 20%)
